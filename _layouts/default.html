@@ -27,7 +27,7 @@
         <div class="show"></div>
         <div class="hide">
 
-        <div>{{ site.extend }}</div>
+        <div>{{ site.extend | default: none }}</div>
 
         {% if site.show_downloads %}
         <div class="box">
