@@ -2,7 +2,7 @@
 @import "rouge-github";
 
 body {
-  background-color: #fffafafa;
+  background-color: #fafafa;
   padding:50px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
@@ -48,7 +48,7 @@ a {
   -o-transition:text-decoration 0.7s ease 0s;
 }
 
-a:hover {
+a:hover, a:focus{
    text-decoration: underline;
    background-color: #069;
    color: #ffffff;
@@ -280,4 +280,51 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+.box {
+  box-shadow: darkgrey 0px 1px 4px;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 10px;
+  margin:10px auto;
+}
+
+.box_no-shadow {
+  box-shadow: darkgrey 0px 1px 4px;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 10px;
+  margin:10px auto;
+}
+
+.a_box {
+  box-shadow: darkgrey 0px 1px 4px;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 10px;
+  margin:10px auto;
+  transition:box-shadow 0.7s ease 0s;
+  -moz-transition:box-shadow 0.7s ease 0s;
+  -webkit-transition:box-shadow 0.7s ease 0s;
+  -o-transition:box-shadow 0.7s ease 0s;
+}
+.a_box:hover {
+  box-shadow: none
+}
+
+.list {
+  box-shadow: none;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 10px;
+  margin: 10px auto;
+  transition: box-shadow 0.7s ease 0s;
+  -moz-transition: box-shadow 0.7s ease 0s;
+  -webkit-transition: box-shadow 0.7s ease 0s;
+  -o-transition: box-shadow 0.7s ease 0s;
+}
+
+.list:hover {
+  box-shadow: darkgrey 0px 1px 4px;
 }
