@@ -311,13 +311,36 @@ footer {
 }
 .a_box:hover {
   box-shadow: none
+  text-decoration: underline;
+}
+
+// .list-box is used with .list
+
+.list-box {
+  display: none;
+  box-shadow: darkgrey 0px 1px 4px;
+  background: #ffffff;
+  padding: 10px 0px 10px 0px;
+  border-radius: 10px;
 }
 
 .list {
-  box-shadow: none;
-  border-radius: 10px;
+  box-shadow: darkgrey 0px 1px 4px;
   background: #ffffff;
   padding: 10px;
+}
+
+.list:hover {
+  background: #f5f5f5;
+}
+
+// .list-single is just used alone, please Do not be uses with .list-box
+
+.list-single {
+  box-shadow: darkgrey 0px 1px 4px;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 50px;
   margin: 10px auto;
   transition: box-shadow 0.7s ease 0s;
   -moz-transition: box-shadow 0.7s ease 0s;
@@ -325,8 +348,8 @@ footer {
   -o-transition: box-shadow 0.7s ease 0s;
 }
 
-.list:hover {
-  box-shadow: darkgrey 0px 1px 4px;
+.list-single:hover {
+  box-shadow: none;
 }
 
 .show {
@@ -339,4 +362,8 @@ footer {
 
 .hide {
   display: none;
+  box-shadow: darkgrey 0px 1px 4px;
+  background: #ffffff;
+  padding: 10px 0px 10px 0px;
+  border-radius: 10px;
 }

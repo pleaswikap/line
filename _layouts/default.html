@@ -27,7 +27,7 @@
         <div class="show"></div>
         <div class="hide">
 
-        <div>{{ site.extend | default: none }}</div>
+        <div>{{ site.extend }}</div>
 
         {% if site.show_downloads %}
         <div class="box">
@@ -40,15 +40,11 @@
         {% endif %}
 
         {% if site.github.is_project_page %}
-        <div class="list">
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        </div>
         {% endif %}
         
         {% if site.github.is_user_page %}
-        <div class="list">
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        </div>
         {% endif %}
       
         </div>
