@@ -328,3 +328,15 @@ footer {
 .list:hover {
   box-shadow: darkgrey 0px 1px 4px;
 }
+
+.show {
+  box-shadow: darkgrey 0px 1px 4px;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 10px;
+  margin:10px auto;
+}
+
+.hide {
+  display: none;
+}
