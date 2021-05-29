@@ -7,7 +7,11 @@
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <link rel="shortcut icon" href="{{ site.github.url }}/favicon.ico?v={{ site.github.build_revision }}">
+    
+    {% if site.icon %}
+    <link rel="shortcut icon" href="{{site.ico | relative_url}}">
+    {% endif %}
+
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -27,7 +31,7 @@
         <div class="show"></div>
         <div class="hide">
 
-        <div>{{ site.extend }}</div>
+        <div>{{ site.extension }}</div>
 
         {% if site.show_downloads %}
         <div class="box">
