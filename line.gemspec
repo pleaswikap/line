@@ -4,8 +4,8 @@ Gem::Specification.new do |spec|
   spec.name          = 'line'
   spec.version       = '0.0.1'
   spec.license       = 'GPL'
-  spec.authors       = ['Realone']
-  spec.homepage      = 'https://github.com/realone233/line'
+  spec.authors       = ['Andrew Re']
+  spec.homepage      = 'https://github.com/pleaswikap/line'
   spec.summary       = 'line is a Jekyll theme for GitHub Pages'
 
   spec.files         = `git ls-files -z`.split("\x0").select do |f|

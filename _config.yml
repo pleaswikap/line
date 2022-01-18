@@ -1,7 +1,7 @@
 title: Line theme
 markdown: kramdown
 logo: /assets/img/logo.png
-description: line is a theme for GitHub Pages.
+description: Line is a theme for GitHub Pages.
 show_downloads: true
 google_analytics:
-remote_theme: realone233/line
+remote_theme: pleaswikap/line
